@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleSteps-Data-Warehouse", "LittleSteps-Data-Warehouse\LittleSteps-Data-Warehouse.csproj", "{0DF359C8-5604-41E0-809A-C22F678378EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DF359C8-5604-41E0-809A-C22F678378EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DF359C8-5604-41E0-809A-C22F678378EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DF359C8-5604-41E0-809A-C22F678378EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DF359C8-5604-41E0-809A-C22F678378EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B3E52B2-293A-4FAF-9A48-F4DE07BB3888}
+	EndGlobalSection
+EndGlobal
