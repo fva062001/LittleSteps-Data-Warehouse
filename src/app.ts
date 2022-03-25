@@ -39,7 +39,6 @@ export class App{
             })
             process.on("SIGINT", function(){
                 process.kill(process.pid, "SIGINT")
-
             })
         })
         console.log("Server on port: ",this.app.get('port'))
