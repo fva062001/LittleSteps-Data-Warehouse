@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    background-image: url('/dist/assets/loginScreenPhoto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-color: black !important;
+}
+
+.col-4{
+    background-color: white;
+}
+
+.logoImage{
+    width: 30%;
+    height: auto;
+    margin-top:20% ;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom:10%;
+    text-align: center;
+    display: block;
+}
+
+.form-outline{
+    text-align: center;
+}
+
+.d-grid{
+    margin-top: 15% !important;
+    margin-bottom: 100% !important;
+}
+
+input{
+    width: 60% !important;
+    margin-left: 20% !important;
+    margin-right: 20% !important;
+}
+
