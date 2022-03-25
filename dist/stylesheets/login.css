@@ -22,7 +22,7 @@ body{
 
 .col-6{
     width: 73% !important;
-    background-image: url('loginScreenPhoto.jpg')  !important;
+    background-image: url('../assets/loginScreenPhoto.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
