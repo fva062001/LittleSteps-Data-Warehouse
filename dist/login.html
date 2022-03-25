@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Screen</title>
 
-    <link rel="stylesheet" href="stylesheets/login.css">
+    <link rel="stylesheet" href="./stylesheets/login.css">
     <!-- Bootstrap api -->
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -17,17 +17,17 @@
     <div class="row">
         <div class="col-4 " style="background-color: white;">
             <div class="form-outline mb-4">
-                <img class="logoImage" src="assets/littleStepsLogo.png" alt="littleStepsLogo.png">
+                <img class="logoImage" src="./assets/littleStepsLogo.png" alt="littleStepsLogo.png">
                 <label class="form-label" for="userName" style="display: block;">Username</label>
                 <input type="text" id="userName" class="form-control" />
               </div>
 
               <div class="form-outline mb-4 c1">
                 <label class="form-label" for="form2Example2">Password</label>
-                <input type="password" id="form2Example2" class="form-control" />
+                <input type="password" id="password" class="form-control" />
               </div>
               <div class="d-grid gap-1 col-3 mx-auto">
-                <button type="button" class="btn btn-dark btn-md">Sign in</button>
+                <button type="button" id="Sign in" class="btn btn-dark btn-md">Sign in</button>
               </div>
             </form>
         </div>
@@ -36,5 +36,23 @@
         </div>
 
     </div>
+    <script>
+        window.onload = function(){
+            let submit = document.getElementById("Sign in");
+            submit.addEventListener("click", function(){
+                let id = document.getElementById("userName").value;
+                let pass = document.getElementById("password").value;
+
+                fetch("http://localhost:3000/"+id+"/"+pass).then( function(response){
+                    return response.json();
+                }).then(function(data){
+                    if(data.exists == true) window.location.href = "./app.html"
+                    else alert("No existe el tiguere")
+                }).catch(function(err){
+                    console.warn(err);
+                });
+            });
+        }
+    </script>
 </body>
 </html>

@@ -2,8 +2,12 @@ import { Router } from "express"
 
 const router = Router()
 
-import {getUser, WelcomeResponse} from '../controllers/login.controller'
+import {getUsers, WelcomeResponse, userExists} from '../controllers/login.controller'
 
-router.route('/').get( WelcomeResponse )
+router.route('/')
+    .get( WelcomeResponse )
+
+router.route('/:id/:password')
+    .get( userExists )
 
 export default router
