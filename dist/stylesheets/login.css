@@ -1,14 +1,12 @@
 body{
     margin: 0;
-    background-image: url('/dist/assets/loginScreenPhoto.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     overflow: hidden;
-    background-color: black !important;
 }
 
 .col-4{
     background-color: white;
+    width: 27% !important;
+    height: auto !important;
 }
 
 .logoImage{
@@ -22,6 +20,12 @@ body{
     display: block;
 }
 
+.col-6{
+    width: 73% !important;
+    background-image: url('loginScreenPhoto.jpg')  !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .form-outline{
     text-align: center;
 }
