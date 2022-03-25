@@ -1,59 +1,38 @@
 {
-  "name": "ts-express-vuejs-webpack",
-  "version": "2.0.0",
-  "description": "Boilerplate for Express + Vue.JS with Typescript",
-  "private": true,
-  "author": "Onur Elibol",
+  "name": "littlesteps-data-warehouse",
+  "version": "1.0.0",
+  "description": "App Visualizadora del BI de Little Steps",
+  "main": "index.js",
   "scripts": {
-    "serve": "concurrently \"npm run dev:server\" \"npm run dev:client\" --raw",
-    "build": "concurrently \"npm run build:server\" \"npm run build:client\"",
-    "dev:client": "vue-cli-service serve",
-    "build:client": "vue-cli-service build",
-    "dev:server": "nodemon --config ./nodemon.config.json",
-    "build:server": "rimraf dist/server && tsc -p tsconfig.server.json",
-    "lint": "vue-cli-service lint"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "nodemon --delay 500ms src/index.ts --exec ts-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fva062001/LittleSteps-Data-Warehouse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fva062001/LittleSteps-Data-Warehouse/issues"
+  },
+  "homepage": "https://github.com/fva062001/LittleSteps-Data-Warehouse#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
+    "@types/mssql": "^7.1.5",
+    "dotenv": "^16.0.0",
+    "install": "^0.13.0",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "core-js": "^3.6.4",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "http-status-codes": "^2.2.0",
-    "jet-logger": "^1.1.5",
-    "mssql": "^8.0.2",
-    "vue": "^2.6.11",
-    "vue-class-component": "^7.2.3",
-    "vue-property-decorator": "^8.4.1",
-    "vue-router": "^3.1.6",
-    "vuex": "^3.1.3",
-    "webpack-chain": "^6.5.1"
-  },
-  "devDependencies": {
-    "@types/body-parser": "^1.16.8",
-    "@types/dotenv": "^4.0.3",
-    "@types/express": "^4.11.1",
-    "@types/mssql": "^7.1.5",
-    "@typescript-eslint/eslint-plugin": "^5.15.0",
-    "@typescript-eslint/parser": "^5.15.0",
-    "@vue/cli-plugin-babel": "^5.0.3",
-    "@vue/cli-plugin-eslint": "^5.0.3",
-    "@vue/cli-plugin-router": "^5.0.3",
-    "@vue/cli-plugin-typescript": "^5.0.3",
-    "@vue/cli-plugin-vuex": "~4.5.3",
-    "@vue/cli-service": "^4.5.16",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "@vue/eslint-config-typescript": "^5.0.2",
-    "concurrently": "^7.0.0",
-    "eslint": "^7.7.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-vue": "^7.0.0-beta.2",
-    "nodemon": "^2.0.4",
-    "prettier": "^1.19.1",
-    "rimraf": "^3.0.2",
-    "sass": "^1.26.3",
-    "sass-loader": "^8.0.2",
-    "ts-node": "^8.8.2",
-    "typescript": "~3.8.3",
-    "vue-template-compiler": "^2.6.11"
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "mssql": "^8.0.2"
   }
 }
