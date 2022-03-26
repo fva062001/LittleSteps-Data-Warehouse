@@ -4,41 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Screen</title>
+    <title>Login</title>
 
-    <link rel="stylesheet" href="./stylesheets/login.css">
-    <!-- Bootstrap api -->
-    
+    <!-- Bootstrap API -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="Stylesheets/login.css">
+
+    <!-- Font Awesome API -->
+    <script src="https://kit.fontawesome.com/a6948756a2.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <div class="row">
-        <div class="col-4 " style="background-color: white;">
-            <div class="form-outline mb-4">
-                <img class="logoImage" src="./assets/littleStepsLogo.png" alt="littleStepsLogo.png">
-                <label class="form-label" for="userName" style="display: block;">Username</label>
-                <input type="text" id="userName" class="form-control" />
-              </div>
 
-              <div class="form-outline mb-4 c1">
-                <label class="form-label" for="form2Example2">Password</label>
-                <input type="password" id="password" class="form-control" />
-              </div>
-              <div class="d-grid gap-1 col-3 mx-auto">
-                <button type="button" id="Sign in" class="btn btn-dark btn-md">Sign in</button>
-              </div>
-            </form>
+    <div class="login-form">
+        <div class="row">
+            <div class="col-12 icon">
+                <i class="fa fa-solid fa-user"></i>
+            </div>
+            <div class="col-12 title">
+                <h5>Sign into your account</h5>
+            </div>
+            <div class="col-12">
+                <div class="form-outline mb-4">
+                    <input type="text" id="userName" class="form-control" placeholder="Username"/>
+                </div>
+        
+            </div>
+            <div class="col-12">
+                <div class="form-outline mb-4">
+                    <input type="password" id="password" class="form-control" placeholder="Password"/>
+                  </div>
+            </div>
+                <button class="btn btn-light" id="loginButton" type="button">Sign in</button>
         </div>
-
-        <div class="col-6">
-        </div>
-
     </div>
+
     <script>
         window.onload = function(){
-            let submit = document.getElementById("Sign in");
+            let submit = document.getElementById("loginButton");
             submit.addEventListener("click", function(){
                 let id = document.getElementById("userName").value;
                 let pass = document.getElementById("password").value;
@@ -46,7 +52,7 @@
                 fetch("http://localhost:3000/"+id+"/"+pass).then( function(response){
                     return response.json();
                 }).then(function(data){
-                    if(data.exists == true) window.location.href = "./app.html"
+                    if(data.exists == true) window.location.href = "./app"
                     else alert("No existe el tiguere")
                 }).catch(function(err){
                     console.warn(err);

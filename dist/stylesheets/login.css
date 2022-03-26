@@ -1,43 +1,63 @@
 body{
-    margin: 0;
     overflow: hidden;
-}
-
-.col-4{
-    background-color: white;
-    width: 27% !important;
-    height: auto !important;
-}
-
-.logoImage{
-    width: 30%;
-    height: auto;
-    margin-top:20% ;
-    margin-left: 35%;
-    margin-right: 35%;
-    margin-bottom:10%;
-    text-align: center;
-    display: block;
-}
-
-.col-6{
-    width: 73% !important;
-    background-image: url('../assets/loginScreenPhoto.jpg');
+    min-height: 100vh;
+    background-image: url('../assets/loginScreenPhoto1.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-}
-.form-outline{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.d-grid{
-    margin-top: 15% !important;
-    margin-bottom: 100% !important;
+.login-form{
+    width: 480px !important;
+    height: 480px !important;
+    background: rgba(0,0,0, 0.4);
+    backdrop-filter: blur(10px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: sans-serif;
 }
 
 input{
-    width: 60% !important;
-    margin-left: 20% !important;
-    margin-right: 20% !important;
+    background: rgba(0,0,0, 0.4) !important;
+    width:70% !important;
+    margin: auto;
+    color: white !important;
 }
 
+.icon{
+    text-align: center;
+    font-size: 325% !important;
+}
+
+i{
+    margin-bottom: 3% !important;
+    color: #DCDCDC;
+}
+
+h5{
+    color: #DCDCDC !important;
+    margin-bottom: 3% !important;
+}
+
+.title{
+    text-align: center;
+}
+
+::placeholder{
+    color: #DCDCDC !important;
+}
+
+button{
+    width: 25% !important;
+    margin: auto;
+}
+
+::-ms-reveal {
+    filter: invert(100%);
+  }
