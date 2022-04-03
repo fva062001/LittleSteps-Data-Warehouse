@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "DataCubes", "DataCubes\DataCubes.dwproj", "{90CFCFC1-A862-4E79-B715-FED4BF880A0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90CFCFC1-A862-4E79-B715-FED4BF880A0B}.Development|Default.ActiveCfg = Development
+		{90CFCFC1-A862-4E79-B715-FED4BF880A0B}.Development|Default.Build.0 = Development
+		{90CFCFC1-A862-4E79-B715-FED4BF880A0B}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20B6CC76-E310-4C50-BDC7-E25BA8B026F6}
+	EndGlobalSection
+EndGlobal

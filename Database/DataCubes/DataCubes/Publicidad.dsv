@@ -1,0 +1,119 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a4af6009-1f56-48a8-8d59-e227753eef5a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Publicidad</ID>
+  <Name>Publicidad</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Little Steps</DataSourceID>
+  <Schema>
+    <xs:schema id="Publicidad" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Publicidad" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="0e08a7fc-3e75-46d2-92e1-f870b8d9be23">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_fact_publicidad" msprop:design-time-name="155d37e7-ecbc-4a70-b1a9-b621925ef231" msprop:DbTableName="fact_publicidad" msprop:FriendlyName="fact_publicidad" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_tiempo" msprop:design-time-name="904eddac-4bd5-4923-a59d-bff311a46139" msprop:DbColumnName="id_tiempo" msprop:FriendlyName="id_tiempo" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_categoria" msprop:design-time-name="6e44d08d-06fd-478c-b0fb-d94cf898a4aa" msprop:DbColumnName="id_categoria" msprop:FriendlyName="id_categoria" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_gasto_publicitario" msprop:design-time-name="f1fa3e54-8231-4718-b5eb-f34b115f80b2" msprop:DbColumnName="id_gasto_publicitario" msprop:FriendlyName="id_gasto_publicitario" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_gasto_publicitario" msprop:design-time-name="2bdf0463-18ca-4d9b-94d1-71a4c86c0499" msprop:DbTableName="gasto_publicitario" msprop:FriendlyName="gasto_publicitario" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_gasto_publicitario" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="7658598f-9aa1-454c-ae9f-b57b2ef2181c" msprop:DbColumnName="id_gasto_publicitario" msprop:FriendlyName="id_gasto_publicitario" type="xs:int" />
+                  <xs:element name="nombre" msprop:design-time-name="ede7ce4f-ccc1-4077-a5c5-a289a87cbe8b" msprop:DbColumnName="nombre" msprop:FriendlyName="nombre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="precio" msprop:design-time-name="34f7d7b7-2241-47bb-b53e-126185f328e8" msprop:DbColumnName="precio" msprop:FriendlyName="precio" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_categoria" msprop:design-time-name="59bc7383-dfab-4733-b328-6b42f90bb811" msprop:DbTableName="categoria" msprop:FriendlyName="categoria" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_categoria" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="7387c183-c354-4443-85b0-b6273870be02" msprop:DbColumnName="id_categoria" msprop:FriendlyName="id_categoria" type="xs:int" />
+                  <xs:element name="tipo" msprop:design-time-name="9fa7ca0c-3545-4099-a798-67557f56b7b0" msprop:DbColumnName="tipo" msprop:FriendlyName="tipo" type="xs:boolean" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_publicidad_tiempo" msprop:design-time-name="cd8b266d-6836-42c6-b6af-9c8b3469fe4d" msprop:DbTableName="publicidad_tiempo" msprop:FriendlyName="publicidad_tiempo" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_tiempo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="40130774-8773-4e64-a791-81c66f9c37f2" msprop:DbColumnName="id_tiempo" msprop:FriendlyName="id_tiempo" type="xs:int" />
+                  <xs:element name="ano" msprop:design-time-name="7c369f1c-1af2-4ea9-a224-ce503e9a0155" msprop:DbColumnName="ano" msprop:FriendlyName="ano" type="xs:int" minOccurs="0" />
+                  <xs:element name="mes" msprop:design-time-name="430e8b9f-2296-4a94-ab62-85bb7845f5c9" msprop:DbColumnName="mes" msprop:FriendlyName="mes" type="xs:unsignedByte" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_gasto_publicitario" />
+          <xs:field xpath="id_gasto_publicitario" />
+        </xs:unique>
+        <xs:unique name="dbo_categoria_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_categoria" />
+          <xs:field xpath="id_categoria" />
+        </xs:unique>
+        <xs:unique name="dbo_publicidad_tiempo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_publicidad_tiempo" />
+          <xs:field xpath="id_tiempo" />
+        </xs:unique>
+        <xs:keyref name="FK__fact_publ__id_ti__08162EEB" refer="dbo_publicidad_tiempo_Constraint1">
+          <xs:selector xpath=".//dbo_fact_publicidad" />
+          <xs:field xpath="id_tiempo" />
+        </xs:keyref>
+        <xs:keyref name="FK__fact_publ__id_ga__09FE775D" refer="Constraint1">
+          <xs:selector xpath=".//dbo_fact_publicidad" />
+          <xs:field xpath="id_gasto_publicitario" />
+        </xs:keyref>
+        <xs:keyref name="FK__fact_publ__id_ca__090A5324" refer="dbo_categoria_Constraint1">
+          <xs:selector xpath=".//dbo_fact_publicidad" />
+          <xs:field xpath="id_categoria" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Publicidad xmlns="" />
+  </Schema>
+</DataSourceView>

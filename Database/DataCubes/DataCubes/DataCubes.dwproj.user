@@ -1,0 +1,30 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Little Steps</Id>
+            <Name>Little Steps</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA30yzr1w7O0yoG+j4/37sFQAAAAAaAAAATABpAHQAdABsAGUAIABTAHQAZQBwAHMAAAAQZgAAAAEAACAAAACmvjRzOMUljdPRJI0VHfmhgnbXZ0RgmhOUpKayKsnMagAAAAAOgAAAAAIAACAAAAB2NMcK0dSR4K04iGDdhK5IAOTcn1udLMXYNgdYAp//CRAAAAA8BeeLvqwJiWnBYhgVc/gQQAAAACMRwoBxn+UTEqoKMdzKzV3xYWi/puE8Ttzhn++ul9IoNUN9gmuxgBXqmksjhFf4Edl+xctpTQ0JEIJMr+nZ51U=</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Little Steps</Id>
+            <Name>Little Steps</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA30yzr1w7O0yoG+j4/37sFQAAAAAaAAAATABpAHQAdABsAGUAIABTAHQAZQBwAHMAAAAQZgAAAAEAACAAAACZdCGcqBzYQxT7FMwzfmK8OktZL9p5m5Xc+jr/Z4UHoAAAAAAOgAAAAAIAACAAAAD6lYW58wt35HceP+ZYiXfYvJas/kaxJiY6++E5IA9PJBAAAAA18nv9DCSBo517q8WUl3bcQAAAAKXfg+D2mUHo1hHqQxVjc5iZJ4joKZ0/zd98H6gsYzRV2DzKsZ2djK+4hHfN1L8szs4ZeS7UyoMbesTxab9BB10=</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>DESKTOP-EHIK5VR\A</TargetServer>
+        <TargetDatabase>little_steps</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+        <DeploymentMode>DeployAll</DeploymentMode>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

@@ -1,0 +1,154 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>15.0.19623.0</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>DataCubes.database</Name>
+    <FullPath>DataCubes.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Profesores.cube</Name>
+      <FullPath>Profesores.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Profesores.partitions</Name>
+          <FullPath>Profesores.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Publicidad.cube</Name>
+      <FullPath>Publicidad.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Publicidad.partitions</Name>
+          <FullPath>Publicidad.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tutores.cube</Name>
+      <FullPath>Tutores.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Tutores.partitions</Name>
+          <FullPath>Tutores.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estudiantes.cube</Name>
+      <FullPath>Estudiantes.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Estudiantes.partitions</Name>
+          <FullPath>Estudiantes.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Profesor Tiempo.dim</Name>
+      <FullPath>Profesor Tiempo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Salario.dim</Name>
+      <FullPath>Salario.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Clase.dim</Name>
+      <FullPath>Clase.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Empleado.dim</Name>
+      <FullPath>Empleado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Publicidad Tiempo.dim</Name>
+      <FullPath>Publicidad Tiempo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Gasto Publicitario.dim</Name>
+      <FullPath>Gasto Publicitario.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Categoria.dim</Name>
+      <FullPath>Categoria.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tutor Tiempo.dim</Name>
+      <FullPath>Tutor Tiempo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Pago.dim</Name>
+      <FullPath>Pago.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tutor.dim</Name>
+      <FullPath>Tutor.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sel.dim</Name>
+      <FullPath>Sel.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estudiante Tiempo.dim</Name>
+      <FullPath>Estudiante Tiempo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Clase 1.dim</Name>
+      <FullPath>Clase 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Alumno.dim</Name>
+      <FullPath>Alumno.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Little Steps.ds</Name>
+      <FullPath>Little Steps.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Profesores.dsv</Name>
+      <FullPath>Profesores.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Publicidad.dsv</Name>
+      <FullPath>Publicidad.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tutores.dsv</Name>
+      <FullPath>Tutores.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estudiantes.dsv</Name>
+      <FullPath>Estudiantes.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Little Steps</Id>
+            <Name>Little Steps</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-EHIK5VR\A;Persist Security Info=True;Password=;User ID=;Initial Catalog=little_steps</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Little Steps</Id>
+            <Name>Little Steps</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>
