@@ -1,0 +1,92 @@
+body{
+    overflow: hidden;
+}
+.navigation-bar{
+    text-align: right;
+    margin-top: 10px !important;
+}
+
+.admin{
+    margin: 0 !important;
+    display: inline-block;
+}
+
+.fa-circle-user{
+    margin-left: 10px !important;
+    font-size: 45px !important;
+    margin-top: 10px !important;
+}
+
+.nav-item{
+    margin-left: 30px !important;
+}
+
+.logo{
+    margin-top: 2% !important;
+}
+
+.logo-title{
+    margin: 0 !important;
+    display: inline-block;
+    font-weight: 900 !important;
+}
+
+.analysis-title{
+    display: inline-block;
+    text-align: left !important;
+}
+
+.logo-image{
+    width: 13% !important;
+    display: inline-block;
+    margin-right: 2%;
+}
+
+.tab-icons{
+    margin-right: 7px !important;
+}
+
+
+.nav-item{
+    font-size: 140%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700 !important;
+}
+
+.item{
+    color: black !important;
+}
+
+.items{
+    margin-top: 5%;
+}
+
+.box{
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  -20px 20px 60px #d9d9d9,
+                 20px -20px 60px #ffffff;
+    width: 10% !important;
+    height: auto !important;
+    margin-right: 200px !important;
+    margin-bottom: 50px !important;
+    text-align: center;
+}
+
+#rowBoxes{
+    margin-top: 3% !important;
+}
+
+[v-cloak]
+{
+    display: none;
+}
+.algo1{
+    width: 300px;
+    height: auto;
+}
+
+.algo2{
+    width: 550px;
+    height: auto;
+}
