@@ -2,7 +2,7 @@ import { Router } from "express"
 
 const router = Router()
 
-import {getUsers, WelcomeResponse, userExists} from '../controllers/login.controller'
+import { WelcomeResponse, userExists} from '../controllers/login.controller'
 
 router.route('/')
     .get( WelcomeResponse )
