@@ -1,0 +1,45 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8e122bcf-f345-44b0-9296-b335333d983c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Publicidad</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Publicidad</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="55d670c7-3ada-4426-be57-9ee968b73d52">
+          <ID>Fact Publicidad</ID>
+          <Name>Fact Publicidad</Name>
+          <CreatedTimestamp>0001-01-01T04:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T04:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T04:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4137c68f-305b-405d-aa1f-5910a97bfe3d">
+            <DataSourceViewID>Publicidad</DataSourceViewID>
+            <TableID>dbo_fact_publicidad</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Gasto Publicitario DW</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="1f1e0ae0-4114-42f4-b01c-4c8e3d7e88ac">
+          <ID>Gasto Publicitario DW</ID>
+          <Name>Gasto Publicitario DW</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6e27fb01-050d-409f-b129-103271591bc5">
+            <DataSourceViewID>Publicidad</DataSourceViewID>
+            <TableID>dbo_gasto_publicitario_DW</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

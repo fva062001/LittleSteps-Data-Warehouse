@@ -1,0 +1,199 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d9beccca-59a3-4519-9970-ac67428be868" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>SEL DW</ID>
+  <Name>SEL DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4689" scrolltop="-6456" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12859" y="16484" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="SEL_DW" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3440" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000700d0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_SEL_DW" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4689</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6456</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e2e0a426-7b7b-48de-8437-e08035d3587a">
+    <DataSourceViewID>Estudiante</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="a9d72866-f738-41e9-aafd-1edb471bf177">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="a02482a3-d858-4b84-9e00-d29b1e269b24">
+      <ID>Id Sel</ID>
+      <Name>Id Sel</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7f8d48a0-b513-4ec4-9cc4-946cd0946fb2">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="25c995f2-dc12-4d6b-9c8c-65e5b5d1cf0d">
+            <TableID>dbo_SEL_DW</TableID>
+            <ColumnID>id_sel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ff90208b-ad4e-48bf-8e54-22bbbbf01079">
+          <AttributeID>Self Awareness</AttributeID>
+          <Name>Self Awareness</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4d2744a4-292b-4e57-856d-b98bd8ab90d7">
+          <AttributeID>Self Management</AttributeID>
+          <Name>Self Management</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c836daf3-974a-4140-b3c0-25eebcb8aa83">
+          <AttributeID>Social Awareness</AttributeID>
+          <Name>Social Awareness</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="92ec9cad-2cab-429a-ad16-3d0b844cdfb1">
+          <AttributeID>Relationship Skills</AttributeID>
+          <Name>Relationship Skills</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="256d9b08-b7d9-44fb-92b6-3e049441849c">
+          <AttributeID>R D M</AttributeID>
+          <Name>R D M</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e28253ce-8f6e-42d0-9847-7b2af883671c">
+      <ID>Self Awareness</ID>
+      <Name>Self Awareness</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="48bd935f-c2e3-489d-8c70-add5b5c53e9c">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b96494b5-6157-4fef-8883-ceb804de3d7d">
+            <TableID>dbo_SEL_DW</TableID>
+            <ColumnID>self_awareness</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="37026d34-604b-4b23-b0f0-6317cc3e8b01">
+      <ID>Self Management</ID>
+      <Name>Self Management</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="96a57f38-1fef-4c49-8910-afabe48a2785">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="77a1e477-7b64-4f83-a19a-cf3fee45f2e9">
+            <TableID>dbo_SEL_DW</TableID>
+            <ColumnID>self_management</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="042666fd-5e17-40e7-a792-eb200aba2c3a">
+      <ID>Social Awareness</ID>
+      <Name>Social Awareness</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6f483719-ec69-4c28-ac57-a7dcbab6be21">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f51df418-61a7-4e66-8cef-8bb59993304c">
+            <TableID>dbo_SEL_DW</TableID>
+            <ColumnID>social_awareness</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8d1061f0-8a03-4b3a-8b47-9eed2ac7f22e">
+      <ID>Relationship Skills</ID>
+      <Name>Relationship Skills</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ff18e3b7-8097-4fcc-9d6a-197d1a4dc553">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="21a72f8e-1a02-460c-8f30-915e36ab07dd">
+            <TableID>dbo_SEL_DW</TableID>
+            <ColumnID>relationship_skills</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="27699911-e6a9-4ce8-833f-f09bf40e8407">
+      <ID>R D M</ID>
+      <Name>R D M</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="72838eb7-ca0c-4c43-879f-eac5752563e8">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="340dd444-9b17-4f26-a950-8f14342dc5d8">
+            <TableID>dbo_SEL_DW</TableID>
+            <ColumnID>R_D_M</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

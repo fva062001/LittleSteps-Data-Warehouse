@@ -1,0 +1,201 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>little_steps</Database>
+    <Server>DESKTOP-EHIK5VR\A</Server>
+    <ConnectionString>Data Source=DESKTOP-EHIK5VR\A;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>+K3rLy1ZN/wL8nSJMVHfFF/kPY8=4/5/2022 3:06:23 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Little_steps</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>JnNIzzeh/Ta2SO+qg9a/c4q/+bk=4/4/2022 4:08:16 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Estudiante</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>fORshOsj5y5KbeJKdpazqC3t9ec=4/4/2022 4:09:04 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Tutor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>VHFak8cVcdCTmt3e4Qyu7wnAGr0=4/4/2022 4:09:18 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Publicidad</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>Xty2W/BZa9ESBTN41dImE9CoUbo=4/4/2022 4:09:32 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Profesor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3OjZEANn5YNdszHWPhXHMO4a+kU=4/4/2022 4:12:34 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Alumno DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TboSV1ep2YJLXT9D7KJ71ao131U=4/4/2022 4:12:48 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Estudiante Tiempo DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>P7CTWo1AZJ8oJpGbsIUkmb1UCw0=4/4/2022 4:12:56 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Clase DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fINWuqLBi3U61TCSg1rMlYWQszI=4/4/2022 4:13:02 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>SEL DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>pljuCrHUAr1Ruo5u8bGz7rHkAHM=4/4/2022 4:13:08 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Tutor DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ngiFRq/GEQeuXnJCPLqF64+74so=4/4/2022 4:11:58 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Tutor DW 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gpyC0kV3xccCqrQsjiAfoBoHZJU=4/4/2022 4:12:04 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Pago DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9v90Ddnk7yYtNHsj/JireEmQUfk=4/4/2022 4:12:20 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Tutor Tiempo DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gYD+wjf2AsZHkh8vTI6+eZUblLs=4/4/2022 4:11:36 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Publicidad Tiempo DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>shjOhRn5k6lZZWgBI0wJ6WsRqfs=4/4/2022 4:11:44 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Gasto Publicitario DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>S5GM4ykxHJVZ0x9Rylk0ccFnJlI=4/4/2022 4:11:50 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Categoria DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>glwLLYTeixD/R6Ov5/IW/nMA5qU=4/4/2022 4:11:04 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Empleado DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>oT2UQ1Q227Ojutq6Wp1CdZDJnl0=4/4/2022 4:11:12 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Clase DW 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RYrhWk27UYNGJ0NFPBR3mfDj+ng=4/4/2022 4:11:20 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Salario DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>J7kmXvSiGgOZJL8jB4WMSVmuAN4=4/4/2022 4:13:36 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Profesor Tiempo DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Vhk3Sp8yJ5AGSiJHF/MAZlFaqAc=4/5/2022 1:13:54 AM4/5/2022 2:58:31 PM1NauwqIB8dOEXnHGzalQAJ9PxOA=4/5/2022 1:13:54 AM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Estudiante</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>3RbAwWRqiCkShM8eF7juo9yuLRg=4/4/2022 4:12:20 PM4/5/2022 2:58:31 PM+pEi+CEVYKLOPkP6He1GQl75Zqw=4/4/2022 4:10:18 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Tutor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>J9CQWNbX5WpRpeohXIeyeN0VwqM=4/4/2022 9:46:36 PM4/5/2022 2:58:31 PMvZjYDtZZwcN3SyFalysfX09UdYM=4/4/2022 9:46:36 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Publicidad</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>z4MYosKQh2qQu7TDPjySl8BmiqQ=4/4/2022 4:11:20 PM4/5/2022 2:58:31 PMccR2CcPgyRS9uVIbiMG/fIr/TRk=4/4/2022 4:10:42 PM4/5/2022 2:58:31 PM</TimeStamp>
+        <ID>
+          <String>Profesor</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>OjoJzNptGqw25nd0vnDR8zxFbkI=4/3/2022 9:36:14 AM4/5/2022 2:58:31 PM</TimeStamp>
+      <ID>
+        <String>little_steps</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2022-04-05T19:06:30.346667Z</LastDeployed>
+</DeploymentSnapshot>

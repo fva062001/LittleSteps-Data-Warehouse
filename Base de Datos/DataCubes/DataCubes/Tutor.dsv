@@ -1,0 +1,134 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b62a9cc7-6eed-4230-bc58-8f2bfd59d362" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Tutor</ID>
+  <Name>Tutor</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Little_steps</DataSourceID>
+  <Schema>
+    <xs:schema id="Tutor" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Tutor" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="fd0ce384-9f20-4436-aa9c-445ec77de43c">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_fact_tutor" msprop:design-time-name="f884a0ea-4e39-4a7d-9e2d-fff6d0a519ac" msprop:DbTableName="fact_tutor" msprop:FriendlyName="fact_tutor" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_tiempo" msprop:design-time-name="c04faeb7-1620-499a-8027-90395ea32c6c" msprop:DbColumnName="id_tiempo" msprop:FriendlyName="id_tiempo" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_pago" msprop:design-time-name="9598e156-e3ba-40a2-a179-c2da7afc2f8b" msprop:DbColumnName="id_pago" msprop:FriendlyName="id_pago" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_tutor" msprop:design-time-name="b14b8ef6-c14c-415d-a06e-24cf2b9f3226" msprop:DbColumnName="id_tutor" msprop:FriendlyName="id_tutor" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Tutor_tiempo_DW" msprop:design-time-name="abcc69ee-61cc-4d42-9a95-307962d233ae" msprop:DbTableName="Tutor_tiempo_DW" msprop:FriendlyName="Tutor_tiempo_DW" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_tiempo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="65cbf181-f4b4-4069-a3fc-e47c295cfcea" msprop:DbColumnName="id_tiempo" msprop:FriendlyName="id_tiempo" type="xs:int" />
+                  <xs:element name="fecha" msprop:design-time-name="29f97e4e-c37a-42b9-83f3-630c0c204f79" msprop:DbColumnName="fecha" msprop:FriendlyName="fecha" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ano" msprop:design-time-name="50cf6586-71d9-43c0-bb38-c3cf63d31b72" msprop:DbColumnName="ano" msprop:FriendlyName="ano" type="xs:int" minOccurs="0" />
+                  <xs:element name="semestre" msprop:design-time-name="3beb9d08-9811-4790-8c37-b1e3b8e7abe5" msprop:DbColumnName="semestre" msprop:FriendlyName="semestre" type="xs:unsignedByte" minOccurs="0" />
+                  <xs:element name="mes" msprop:design-time-name="6840333f-1a92-4c8c-9501-7d4996c11bc5" msprop:DbColumnName="mes" msprop:FriendlyName="mes" type="xs:unsignedByte" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Pago_DW" msprop:design-time-name="4bc9d931-80a5-4ea3-88ca-61b47210baca" msprop:DbTableName="Pago_DW" msprop:FriendlyName="Pago_DW" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_pago" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="9f5f3cb9-f822-4d43-ad04-c1e3ee925f4c" msprop:DbColumnName="id_pago" msprop:FriendlyName="id_pago" type="xs:int" />
+                  <xs:element name="monto" msprop:design-time-name="36dbf1b2-ac79-42b3-be5e-ff043d40a36e" msprop:DbColumnName="monto" msprop:FriendlyName="monto" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Tutor_DW" msprop:design-time-name="a3160fd2-9e8e-44a8-8efc-5074c7df6925" msprop:DbTableName="Tutor_DW" msprop:FriendlyName="Tutor_DW" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_tutor" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8539e2d6-c346-4aae-b579-845eafb6b775" msprop:DbColumnName="id_tutor" msprop:FriendlyName="id_tutor" type="xs:int" />
+                  <xs:element name="nombre" msprop:design-time-name="b3cc9a0c-112c-4fdd-bcde-044ee0b8e6f8" msprop:DbColumnName="nombre" msprop:FriendlyName="nombre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="cedula" msprop:design-time-name="c45ede5b-45c2-4b69-b891-fb05250c32f9" msprop:DbColumnName="cedula" msprop:FriendlyName="cedula" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="13" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="numero_de_telefono" msprop:design-time-name="a7ff349b-efb3-4f00-a93e-ac214f5df6c0" msprop:DbColumnName="numero_de_telefono" msprop:FriendlyName="numero_de_telefono" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="12" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Tutor_tiempo_DW" />
+          <xs:field xpath="id_tiempo" />
+        </xs:unique>
+        <xs:unique name="dbo_Pago_DW_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Pago_DW" />
+          <xs:field xpath="id_pago" />
+        </xs:unique>
+        <xs:unique name="dbo_Tutor_DW_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Tutor_DW" />
+          <xs:field xpath="id_tutor" />
+        </xs:unique>
+        <xs:keyref name="FK__fact_tuto__id_ti__4222D4EF" refer="Constraint1">
+          <xs:selector xpath=".//dbo_fact_tutor" />
+          <xs:field xpath="id_tiempo" />
+        </xs:keyref>
+        <xs:keyref name="FK__fact_tuto__id_pa__4316F928" refer="dbo_Pago_DW_Constraint1">
+          <xs:selector xpath=".//dbo_fact_tutor" />
+          <xs:field xpath="id_pago" />
+        </xs:keyref>
+        <xs:keyref name="FK__fact_tuto__id_tu__440B1D61" refer="dbo_Tutor_DW_Constraint1">
+          <xs:selector xpath=".//dbo_fact_tutor" />
+          <xs:field xpath="id_tutor" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Tutor xmlns="" />
+  </Schema>
+</DataSourceView>

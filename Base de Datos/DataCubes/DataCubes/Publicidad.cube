@@ -1,0 +1,345 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8e12961c-34c3-4e71-be92-7cc10a785dbf" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Publicidad</ID>
+  <Name>Publicidad</Name>
+  <CreatedTimestamp>0001-01-01T04:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T04:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="16" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-14055" scrolltop="-2381" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="37756" y="16484" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="fact_publicidad" left="20" top="4702" logicalid="8" controlid="1" masterid="0" hint1="0" hint2="0" width="3757" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ad0e0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_fact_publicidad" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="categoria_DW" left="6177" top="4913" logicalid="9" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_categoria_DW" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="gasto_publicitario_DW" left="20" top="0" logicalid="10" controlid="3" masterid="0" hint1="0" hint2="0" width="3757" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ad0e0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_gasto_publicitario_DW" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="publicidad_tiempo_DW" left="398" top="9404" logicalid="11" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_publicidad_tiempo_DW" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1499" top="6704" logicalid="12" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__fact_publ__id_ti__4AB81AF0]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1898" y="9404" />
+              <point x="1898" y="7004" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1499" top="1803" logicalid="13" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__fact_publ__id_ga__4CA06362]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1898" y="2302" />
+              <point x="1898" y="4702" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3477" top="5453" logicalid="14" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__fact_publ__id_ca__4BAC3F29]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="12" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6177" y="5852" />
+              <point x="4977" y="5852" />
+              <point x="4977" y="5853" />
+              <point x="3777" y="5853" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-14055</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2381</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T04:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="1b149af2-ddc6-4bfd-9cbb-83ecef54f143">
+      <ID>Publicidad Tiempo DW</ID>
+      <Name>Publicidad Tiempo DW</Name>
+      <DimensionID>Publicidad Tiempo DW</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f8914d93-77ed-49d2-956f-6d822b4da313">
+          <AttributeID>Id Tiempo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c5952381-d431-4663-b380-1362279d1e5c">
+          <AttributeID>Ano</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3b978624-6bc1-4c67-8d9c-9cd85eae84d7">
+          <AttributeID>Mes</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="6132538f-3e46-4013-b978-b8b8a60bb37e">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="db33507a-ad83-41ec-8479-9f3ede4e5228">
+      <ID>Gasto Publicitario DW</ID>
+      <Name>Gasto Publicitario DW</Name>
+      <DimensionID>Gasto Publicitario DW</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="39fada81-345a-4bd8-9617-444c6803ec89">
+          <AttributeID>Id Gasto Publicitario</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="824aed2c-1d35-4c62-826d-5dca56731a6d">
+          <AttributeID>Nombre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="80ef7857-dec5-4dab-aff8-4b0fa17651d4">
+          <AttributeID>Precio</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7d6c7070-e3e5-4c85-9d69-f50462d1a80c">
+      <ID>Categoria DW</ID>
+      <Name>Categoria DW</Name>
+      <DimensionID>Categoria DW</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f121c8d9-2c09-43a5-9ad4-a32d2bd20dd6">
+          <AttributeID>Id Categoria</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1cb4e6ce-dba2-45a3-a807-b4a2da7d52fd">
+          <AttributeID>Tipo</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="5291078e-7f98-474c-9ea7-4c15f9521357">
+      <ID>Fact Publicidad</ID>
+      <Name>Fact Publicidad</Name>
+      <CreatedTimestamp>0001-01-01T04:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T04:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T04:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="b4f64428-ad32-4fd3-ba42-39cc743bf472">
+          <ID>Fact Publicidad Count</ID>
+          <Name>Fact Publicidad Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="a35a0ddd-d710-4610-925f-843c330a1ed2">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="9a1990e8-eb67-451d-a70e-322156636dd2">
+              <TableID>dbo_fact_publicidad</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="48b5c6b4-3bbc-47e1-ba25-c84e6873ca2c">
+          <CubeDimensionID>Publicidad Tiempo DW</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="67b24600-1bad-4331-adfe-888866781344">
+              <AttributeID>Id Tiempo</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a28e5f9d-fc59-4ada-a160-417db314272e">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="82296cea-3943-4f10-8a81-f7428e82f442">
+                    <TableID>dbo_fact_publicidad</TableID>
+                    <ColumnID>id_tiempo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1fb29c83-ff48-4450-9e9e-3f27477f6321">
+          <CubeDimensionID>Gasto Publicitario DW</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fe31156e-36b2-4f2c-b998-f90d282e4e3b">
+              <AttributeID>Id Gasto Publicitario</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b9a343cd-afd2-4aec-938b-41555b3a66a4">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4c422bc0-0312-4c73-b529-3562c049bec1">
+                    <TableID>dbo_fact_publicidad</TableID>
+                    <ColumnID>id_gasto_publicitario</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c9e10065-a388-4fd0-90b9-ff86cf06b4f6">
+          <CubeDimensionID>Categoria DW</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="46d6850a-4bd8-45aa-af62-6acfe44a5105">
+              <AttributeID>Id Categoria</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="75dd9c85-43c7-429b-9a5c-cd91c6d4b16e">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4588608e-b614-4ce0-9c14-f520b83e760b">
+                    <TableID>dbo_fact_publicidad</TableID>
+                    <ColumnID>id_categoria</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="fae78716-d105-4976-9996-992ac48921bd">
+      <ID>Gasto Publicitario DW</ID>
+      <Name>Gasto Publicitario DW</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="132e1c89-8505-4e10-85e0-fce472e2cce1">
+          <ID>Precio</ID>
+          <Name>Precio</Name>
+          <Source dwd:design-time-name="ce12851a-413d-4ed4-8170-86725d50a515">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="05fa8665-30de-4eea-892e-eebf63c81479">
+              <TableID>dbo_gasto_publicitario_DW</TableID>
+              <ColumnID>precio</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="f7511e05-afec-49ec-b5d4-e27c70fc0b24">
+          <CubeDimensionID>Gasto Publicitario DW</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ebd6c918-a9db-471c-8eb8-58d5129e1c93">
+              <AttributeID>Id Gasto Publicitario</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="740b18d3-1dd6-4379-8613-df015f9967d1">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a155704f-f6eb-434c-9c48-08a1fd2dc77b">
+                    <TableID>dbo_gasto_publicitario_DW</TableID>
+                    <ColumnID>id_gasto_publicitario</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="789779da-97ab-44d6-b543-39792c1fefd2">
+    <DataSourceViewID>Publicidad</DataSourceViewID>
+  </Source>
+</Cube>

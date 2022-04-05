@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-EHIK5VR_A.little_steps"
+  DTS:DTSID="{7DBD48E2-79DF-476C-9C54-4C62408E42F0}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DESKTOP-EHIK5VR\A;User ID=sa;Initial Catalog=little_steps_old;Persist Security Info=True;Application Name=SSIS-DataMarts-{7DBD48E2-79DF-476C-9C54-4C62408E42F0}DESKTOP-EHIK5VR\A.little_steps;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA30yzr1w7O0yoG+j4/37sFQAAAAACAAAAAAAQZgAAAAEAACAAAACe6uSULus+kMD4JIzuP865km5aBBDewK8Ps1keNoG/vgAAAAAOgAAAAAIAACAAAACUdGhYS23+MVe/8JZ0x8dqOR5sarnUsJc+59nJdTgyUnAAAADc3j41oIkZT51ElIXLQoyYaSJfzoSRSsW5K9YIXPvig3t311TV9s+ePF405Bg346zdR8cBjcCEs3cTvMx0x2WKFOYZb1QrrBKw1cU6POaz0rs4Kklo6QgutGb/rKL4vK9TvQXUC5ulMajcSFDxWIzdQAAAANMqxUWtyUu8o3qYvMq9gQAQh2qbgVbmG714qDCBwcZOgPQwVqWi1utJTnGxuoO4+SM+Hna/m+oW6Tf7Q8QDVNA=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

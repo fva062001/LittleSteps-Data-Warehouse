@@ -1,0 +1,208 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6dee8edc-bbd9-4524-83b0-3c6d77a44393" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Tutor Tiempo DW</ID>
+  <Name>Tutor Tiempo DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4909" scrolltop="-6668" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12859" y="16484" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tutor_tiempo_DW" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Tutor_tiempo_DW" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4909</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6668</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b08cab0f-0d18-4ab1-9666-a1607355ff32">
+    <DataSourceViewID>Tutor</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="fd46d820-f766-42e0-be8a-5fc2b4b2394b">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="35ec1a17-f5e0-48cb-8239-621e5cfe3985">
+      <ID>Id Tiempo</ID>
+      <Name>Id Tiempo</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9f04d074-ebc3-4af4-862c-0891eb981dfb">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe4875dd-e2e1-4817-b9e6-b318f4e07604">
+            <TableID>dbo_Tutor_tiempo_DW</TableID>
+            <ColumnID>id_tiempo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="34bf7ca7-4c81-42b5-8805-511775d2a221">
+          <AttributeID>Fecha</AttributeID>
+          <Name>Fecha</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1b32b74c-bd2a-4f42-a4fc-8b731f7f97b1">
+          <AttributeID>Ano</AttributeID>
+          <Name>Ano</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c1cda897-28b8-4f2a-a079-998b161596f3">
+          <AttributeID>Semestre</AttributeID>
+          <Name>Semestre</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b491e632-896c-4de1-89ea-87b8855f52d3">
+          <AttributeID>Mes</AttributeID>
+          <Name>Mes</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fdbdede5-d45e-4e0f-9f68-25bbdf13eb76">
+      <ID>Fecha</ID>
+      <Name>Fecha</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="41c5682c-63ea-4627-b46d-190997ddd67d">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="302360b1-4c13-4330-b2c0-3b0c399ce9e4">
+            <TableID>dbo_Tutor_tiempo_DW</TableID>
+            <ColumnID>fecha</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e0971524-bdcc-4266-99e5-e4d77263279d">
+      <ID>Ano</ID>
+      <Name>Ano</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="65380701-e1a7-4b2e-b968-d999eadd65d9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="448e8abb-490e-4bc8-b0aa-3c27709b808c">
+            <TableID>dbo_Tutor_tiempo_DW</TableID>
+            <ColumnID>ano</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ae1a828e-69d9-49d2-9355-e7337470d43c">
+      <ID>Semestre</ID>
+      <Name>Semestre</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a52a1f38-5868-49b6-a869-10cb535cb4ce">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3cdf9916-8526-4cdf-9015-edd3aaf5696b">
+            <TableID>dbo_Tutor_tiempo_DW</TableID>
+            <ColumnID>semestre</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f54fefea-423b-4fde-a251-76ca9011ee53">
+      <ID>Mes</ID>
+      <Name>Mes</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="04ea8972-2f9f-472a-944d-b846b8f40002">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8af4919c-28da-41b6-94ca-1c9a0695fdd4">
+            <TableID>dbo_Tutor_tiempo_DW</TableID>
+            <ColumnID>mes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="f4e1b113-b540-4557-bd72-dbdf490cab67">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="aef9ae58-cf22-4567-ac9a-9ce1b3ad807c">
+          <ID>Fecha</ID>
+          <Name>Fecha</Name>
+          <SourceAttributeID>Fecha</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="7ba281e6-f319-4654-b7e7-76bafb7f14cc">
+          <ID>Ano</ID>
+          <Name>Ano</Name>
+          <SourceAttributeID>Ano</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="879813ca-cdf6-47b9-ab9e-9e10f6fdae26">
+          <ID>Semestre</ID>
+          <Name>Semestre</Name>
+          <SourceAttributeID>Semestre</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="3180b106-cb92-46d9-85e8-0120137d141d">
+          <ID>Mes</ID>
+          <Name>Mes</Name>
+          <SourceAttributeID>Mes</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
