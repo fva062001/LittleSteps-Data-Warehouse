@@ -61,16 +61,12 @@ body{
     margin-top: 5%;
 }
 
-.box{
-    border-radius: 50px;
+iframe{
     background: #ffffff;
     box-shadow:  -20px 20px 60px #d9d9d9,
                  20px -20px 60px #ffffff;
-    width: 10% !important;
-    height: auto !important;
-    margin-right: 200px !important;
-    margin-bottom: 50px !important;
-    text-align: center;
+    margin-top: 2% !important;
+    margin-right: 2% !important;
 }
 
 #rowBoxes{
@@ -81,12 +77,12 @@ body{
 {
     display: none;
 }
-.algo1{
-    width: 300px;
-    height: auto;
+
+.title-page{
+    margin-top: 5px !important;
+    margin-right: 20px !important;
 }
 
-.algo2{
-    width: 550px;
-    height: auto;
+#main-content2{
+    margin-top: 30px !important;
 }

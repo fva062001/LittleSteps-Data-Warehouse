@@ -19,7 +19,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 50px;
     font-family: sans-serif;
 }
 
