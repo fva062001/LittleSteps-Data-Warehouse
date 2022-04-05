@@ -51,7 +51,7 @@
                         <button type="button item" v-on:click="changeDashboard('education')" class="btn btn-lg item" aria-label="Close"><i class="fa-solid fa-graduation-cap tab-icons"></i>Education</button>
                     </li>
                     <li class="nav-item items">
-                        <button type="button item" v-on:click.native="!decision" class="btn btn-lg disabled item" aria-label="Close"><i class="fa fa-light fa-gear tab-icons"></i>Settings</button>
+                        <button type="button item" class="btn btn-lg disabled item" aria-label="Close"><i class="fa fa-light fa-gear tab-icons"></i>Settings</button>
                     </li>
                     <li class="nav-item items">
                         <button type="button item" id="logout" class="btn btn-lg item" aria-label="Close"><i class="fa fa-light fa-arrow-right-from-bracket tab-icons"></i>Logout</button>
@@ -60,40 +60,51 @@
             </div>
             <div class="col col-lg-9 col-md-9 col-sm-9">
                 <div class="navigation-bar container-fluid">
+
+                        <!-- Vue code here -->
+                        <h3 class="title-page" v-if="publicity" style="display: inline-block; float: left;">Publicity Department</h3>
+                        <h3 class="title-page" v-else-if="dashboard" style="display: inline-block; float: left;">Dashboard</h3>
+                        <h3 class="title-page" v-else-if="administration" style="display: inline-block; float: left;">Administration Department</h3>
+                        <h3 class="title-page" v-else-if="humanResources" style="display: inline-block; float: left;">Human Resources Department</h3>
+                        <h3 class="title-page" v-else-if="education" style="display: inline-block; float: left;">Education Department</h3>
                     <p class="admin paragraph">Hey <span><strong>admin,</strong></span><br>admin</p>
+
+
+
+
+
                     <i class="fa fa-regular fa-circle-user admin"></i>
                 </div>
 
-
                 <!-- Vue part -->
-                <div id="main-content">
+                <div id="main-content2">
             
-                    <div class="main-publicity" v-if = "publicity">
+                    <div class="main" v-if = "publicity">
                         <div class="box">
                             publicity
                         </div>
                     </div>
 
-                    <div class="main-administration" v-else-if="administration">
+                    <div class="main" v-else-if="administration">
                         <div class="box">
-                            administration
+                            <iframe title="Tutores" width="1050" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=7ad94256-d22f-455c-b52c-44a824d9ed39&autoAuth=true&ctid=4017af08-a2e1-4daa-9180-5b3bc8ee84fa&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXVzLWVhc3QyLWMtcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
                         </div>                   
                      </div>
             
-                    <div class="main-human-resources" v-else-if="humanResources">
+                    <div class="main" v-else-if="humanResources">
                         <div class="box">
-                            HR
+                            <iframe title="Profesores" width="1050" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=1c21006c-720b-4cec-8459-e51ff2a81867&autoAuth=true&ctid=4017af08-a2e1-4daa-9180-5b3bc8ee84fa&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXVzLWVhc3QyLWMtcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
                         </div>                    
                     </div>
 
-                    <div class="main-education" v-else-if="education">
+                    <div class="main" v-else-if="education">
                         <div class="box">
-                            education
+                            <iframe title="Estudiantes" width="1050" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=daf58fb9-f910-4321-a207-0b28ea744dd0&autoAuth=true&ctid=4017af08-a2e1-4daa-9180-5b3bc8ee84fa&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXVzLWVhc3QyLWMtcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
                         </div>   
                     </div>
 
 
-                    <div class="main-dashboard" v-else-if="dashboard">
+                    <div class="main" v-else-if="dashboard">
                         <div class="box">
                             dashboard
                         </div>                    
@@ -120,6 +131,7 @@
                     changeDashboard: function(object){
                         if(object == 'publicity')
                         {
+                            this.dashboard = false;
                             this.publicity = true;
                             this.administration = false;
                             this.humanResources = false;
@@ -127,6 +139,7 @@
                         }
                         else if(object == 'administration')
                         {
+                            this.dashboard = false;
                             this.publicity = false;
                             this.administration = true;
                             this.humanResources = false;
@@ -134,6 +147,7 @@
                         }
                         else if(object == 'humanResources')
                         {
+                            this.dashboard = false;
                             this.publicity = false;
                             this.administration = false;
                             this.humanResources = true;
@@ -141,6 +155,7 @@
                         }
                         else if(object == 'education')
                         {
+                            this.dashboard = false;
                             this.publicity = false;
                             this.administration = false;
                             this.humanResources = false;
@@ -148,6 +163,7 @@
                         }
                         else if(object == 'dashboard')
                         {
+                            this.dashboard = true;
                             this.publicity = false;
                             this.administration = false;
                             this.humanResources = false;
